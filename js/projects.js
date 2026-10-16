@@ -20,6 +20,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     slug: "gtech",
+    professional: true,
     number: "02",
     title: "Gtech",
     category: "Commercial product CGI",
@@ -39,6 +40,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     slug: "pop-paper-city",
+    professional: true,
     number: "03",
     title: "Pop Paper City",
     category: "Broadcast animation",
@@ -137,6 +139,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     slug: "m4-hybrid",
+    latest: true,
     number: "08",
     title: "M4 Hybrid",
     category: "Hard-surface character art",
@@ -156,6 +159,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     slug: "dnd-moovables",
+    group: "web",
     number: "09",
     title: "DnD Moovables",
     category: "Web application & product design",
@@ -176,6 +180,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     slug: "caple-consulting",
+    group: "web",
     number: "10",
     title: "Caple Consulting",
     category: "Digital marketing, AI & creative management",
@@ -201,6 +206,30 @@ window.PORTFOLIO_PROJECTS = [
       ["Strategy", "Brand positioning, service architecture and campaign planning"],
       ["AI systems", "Modular agents for content, social media and business development with human approval"],
       ["Creative management", "Coordinating contributors, reviewing output and maintaining brand and campaign consistency"]
+    ]
+  }
+  ,{
+    slug: "seoul-sesame",
+    group: "web",
+    number: "11",
+    title: "Seoul & Sesame",
+    category: "Restaurant website & brand concept",
+    year: "Fictional restaurant / Interactive demo",
+    hero: "assets/seoul-sesame/asset-01.webp",
+    projectHeroVideo: "assets/seoul-sesame/asset-06.mp4",
+    projectHeroPoster: "assets/seoul-sesame/asset-05.webp",
+    heroPosition: "center",
+    intro: "A playful restaurant concept connecting a bold visual identity, food imagery and an interactive browser experience.",
+    description: "Seoul & Sesame brings a fictional Korean-inspired restaurant to life through a seasonal landing page, menu cards, a mock basket, a campaign film and an image carousel. The supplied demo uses HTML, CSS and JavaScript. Ordering, booking and review content are demonstration-only, not a live restaurant service.",
+    role: "Web & brand concept",
+    services: ["Web design", "Brand presentation", "HTML", "CSS", "JavaScript", "Interactive prototype"],
+    links: [{ label: "Launch interactive demo", href: "seoul-sesame-demo.html" }],
+    galleryFit: "contain",
+    images: ["assets/seoul-sesame/asset-01.webp"],
+    notes: [
+      ["Concept", "Fictional restaurant brand with a bright seasonal campaign"],
+      ["Interaction", "Menu browsing, mock basket, image carousel and campaign motion"],
+      ["Scope", "Frontend prototype; no real orders, payments or table reservations"]
     ]
   }
 ];
