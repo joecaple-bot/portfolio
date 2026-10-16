@@ -1,0 +1,74 @@
+/* Brand pass: intentionally scoped to the standalone embedded restaurant demo. */
+html body { font-family:'Nunito Sans',system-ui,sans-serif; background:#fffcf5; }
+html .display, html .brand-text b, html .cta h2 { font-family:'Fredoka','Arial Rounded MT Bold',sans-serif; font-weight:600; letter-spacing:-.035em; line-height:1.02; }
+html .wrap { width:min(1240px,calc(100% - 48px)); }
+html .nav { position:relative; padding:6px 18px; box-shadow:0 6px 24px #23404b0d; }
+html .nav .brand { width:96px; height:86px; min-width:96px; justify-content:center; }
+html .official-logo { width:164px; max-width:none; height:164px; object-fit:contain; }
+html .nav .official-logo { width:96px; height:96px; }
+html .nav-links a { font-size:.9rem; }
+html .hero { padding-top:132px; padding-bottom:78px; border-radius:0 0 48% 5% / 0 0 7% 3%; background:radial-gradient(ellipse at 25% 20%,#d5faff,#91e6f0 72%); }
+html .hero-grid { grid-template-columns: .9fr 1.1fr; gap:12px; }
+html .hero h1 { font-size:clamp(3.4rem,6.2vw,6.1rem); }
+html .hero-copy { max-width:30rem; line-height:1.6; }
+html .hero-sub { margin-top:18px; font-size:1.3rem; }
+html .food-stage { min-height:480px; }
+html .plate {
+  width:110%; max-width:110%; animation:none;
+  border-radius:15%;
+  filter:none;
+  -webkit-mask-image:radial-gradient(ellipse closest-side at center, #000 76%, #000e 86%, transparent 100%);
+  mask-image:radial-gradient(ellipse closest-side at center, #000 76%, #000e 86%, transparent 100%);
+}
+html .food-stage::before { display:none; }
+html .seasonal-badge { width:105px; top:9%; right:0; box-shadow:none; font-size:.95rem; }
+html .btn-primary { box-shadow:none; }
+html .btn-primary:hover { box-shadow:0 5px 15px #b4001926; transform:translateY(-2px); }
+html .hero-meta { gap:12px; }
+html .review { font-size:.9rem; }
+html .review small { font-size:.8rem; }
+html section { padding:64px 0; }
+html .eyebrow { font-size:.78rem; letter-spacing:.14em; }
+html .section-head h2 { font-size:clamp(2.5rem,4vw,4rem); }
+html .menu-card { border-radius:16px; box-shadow:0 6px 16px #29231b08; }
+html .menu-card:hover { transform:translateY(-4px); }
+html .menu-card .img-wrap { height:220px; }
+html .menu-body h3 { font-family:'Fredoka',sans-serif; font-weight:500; }
+html .values { border-radius:45% 5% 35% 6% / 6% 3% 7% 3%; background:#b5eff5; padding:68px 0; }
+html .values-grid { grid-template-columns:1.4fr repeat(4,1fr); }
+html .value { text-align:left; padding:16px 10px; }
+html .value-index { display:block; font:600 2.7rem 'Fredoka',sans-serif; color:#c72a22; margin-bottom:16px; }
+html .value p { font-size:.95rem; }
+html .value-intro h2 { font-size:clamp(2.4rem,3.6vw,3.5rem); }
+html .carousel { border-radius:18px; min-height:460px; }
+html .gallery-copy h2 { font-size:clamp(2.8rem,4vw,4rem); }
+html .cta { border-radius:50% 5% 50% 4% / 9% 3% 8% 3%; padding:66px 0; background:#df1428; }
+html .cta h2 { font-size:clamp(2.3rem,4vw,3.8rem); }
+html footer .official-logo { width:210px; height:210px; }
+html .footer-links { max-width:600px; font-size:.9rem; }
+html button:focus-visible, html a:focus-visible { outline:3px solid #232323; outline-offset:4px; }
+@media(max-width:900px){
+  html .hero-grid { grid-template-columns:1fr; }
+  html .hero h1 { max-width:700px; font-size:clamp(3.4rem,9vw,5rem); }
+  html .food-stage { min-height:0; }
+  html .plate { width:min(640px,100%); max-width:100%; }
+  html .values-grid { grid-template-columns:repeat(2,1fr); }
+  html .nav-actions { margin-left:auto; }
+  html .nav-links.is-open { display:flex; position:absolute; top:calc(100% + 8px); left:0; right:0; background:#fffdf8; border-radius:18px; padding:16px; box-shadow:0 16px 30px #23232320; flex-direction:column; }
+  html .nav-links.is-open a { width:100%; }
+}
+@media(max-width:620px){
+  html .wrap { width:calc(100% - 32px); }
+  html .nav { padding:4px 10px; border-radius:24px; gap:8px; }
+  html .nav .brand { width:80px; min-width:80px; height:76px; }
+  html .nav .official-logo { width:80px; height:80px; }
+  html .hero { padding-top:125px; padding-bottom:45px; }
+  html .hero h1 { font-size:clamp(2.8rem,12vw,4rem); }
+  html .hero-sub { font-size:1.15rem; }
+  html .seasonal-badge { width:82px; font-size:.8rem; }
+  html .values-grid { gap:12px; }
+  html .value-intro { grid-column:1/-1; }
+  html .menu-card .img-wrap { height:240px; }
+  html .carousel { min-height:330px; }
+  html .hero-actions { margin:22px 0; }
+}
